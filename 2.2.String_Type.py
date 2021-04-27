@@ -6,7 +6,9 @@ d = '''Life is too short, You need python'''
 
 # 문자열에 ', " 포함시키기
 food = "Python's favorite food is perl"
+print("food=", food)
 say = '"Python is very easy." he says.'
+print("say=", say)
 multiline = '''
     Life is too short
     You need python
@@ -23,6 +25,7 @@ print(multiline)
 head = "Python"
 tail = ' is fun! '
 head + tail  # 문자열 연결
+print("head + tail =", head + tail)
 a * 2  # 문자열 반복
 print("=" * 50)
 
