@@ -1,10 +1,4 @@
 # abs 절대값을 반환
-import random
-import time
-import calendar
-import webbrowser
-from xml.sax.handler import property_dom_node
-
 print('---abs---')
 print(abs(-3))
 
@@ -178,32 +172,3 @@ print(type(3))
 # zip 동일한 개수로 이루어진 자료형을 묶어줌. 튜플은 그대로 리턴
 print("---zip---")
 print(list(zip([1, 2, 3], [4, 5, 6], [7, 8, 9])))
-
-# shutil.copy(src, dst) src라는 이름의 파일을 dst로 복사함
-
-# time.time()은 UTC(Universal Time Coordinated, 협정 세계 표준시)를 이용하여 현재 시간을 실수 형태로 리턴하는 함수임
-print("---time---")
-print(time.time())  # 1970년 1월 1일 0시 0분 0초를 기준으로 지난 시간을 초 단위로 리턴 함
-print(time.localtime(time.time()))  # 연도, 월, 일, 시, 분, 초, ···의 형태로 바꾸어 주는 함수임
-print(time.asctime(time.localtime(time.time())))  # 튜플 형태의 값을 인수로 받아서 날짜와 시간을 알아보기 쉬운 형태로 리턴하는 함수
-print(time.ctime())  # ctime은 항상 현재 시간만을 리턴
-# time.sleep(1) 1초 간격 java 에서 thread.sleep(1)
-
-# calender 달력
-print("---calender---")
-print(calendar.calendar(2015))  # 2015년도 전체 달력
-print(calendar.prmonth(2015, 12))  # 2015년 12월 달력
-print(calendar.weekday(2015, 12, 31))  # 2015년 12월 31일 요일 반환(월:0 일:6)
-print(calendar.monthrange(2015,12))  # 2015년 12월 1일 요일과 12월이 몇일까지 있는지 반환
-
-# random 랜덤
-print("---random---")
-print(random.random())  # 0.0부터 1.0까지의 실수 난수값 반환
-print(random.randint(1, 10))  # 1부터 10까지의 난수값
-data = [1, 2, 3, 4, 5]
-random.shuffle(data)  # data 리스트 요소값을 무작위로 섞음
-print(data)
-
-# webbrowser
-webbrowser.open("http://google.com")  # 웹 브라우저를 자동으로 실행시키고 해당 URL인 http://google.com으로 가게 해줌
-webbrowser.open_new("http://google.co")  # open_new 함수는 이미 웹 브라우저가 실행된 상태이더라도 새로운 창으로 해당 주소가 열리도록 함
