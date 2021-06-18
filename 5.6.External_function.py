@@ -21,6 +21,9 @@ print(f.read)  # 읽어 들인 파일 객체의 내용을 보기
 
 # shutil.copy(src, dst) src라는 이름의 파일을 dst로 복사함
 
+# glob 특정 디렉터리에 있는 파일 이름을 모두 알아야 할 때 사용
+print(glob.glob("C:/python/q*"))  # C:\python이라는 디렉터리에 있는 파일 중 이름이 문자 q로 시작하는 파일들을 모두 찾음
+
 # time.time()은 UTC(Universal Time Coordinated, 협정 세계 표준시)를 이용하여 현재 시간을 실수 형태로 리턴하는 함수임
 print("---time---")
 print(time.time())  # 1970년 1월 1일 0시 0분 0초를 기준으로 지난 시간을 초 단위로 리턴 함
